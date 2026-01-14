@@ -8,7 +8,7 @@ let result = calculateCartPrice(200, 300, 400); //-> return the values in an arr
 console.log(result);
 
 
-//use object in JS
+//use object in JS 
 
 const course = {
     courseName: "Solana with harkirat",
