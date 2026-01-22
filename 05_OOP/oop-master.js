@@ -23,3 +23,18 @@ console.log(rudraEnteprises);
 console.log(rudraEnteprises.billAmount);
 
 // Prototyple Chain
+
+function Combo(type, mcb, spd, fuseHolder){
+    this.type = type
+    this.mcb = mcb
+    this.spd = spd
+    this.fuseHolder = fuseHolder
+}
+
+Combo.prototype.eliteCombo = function(){
+    return `Item: ${this.type}, Description : MCB-${this.mcb}, SPD-${this.spd}, Fuse Holder-${this.fuseHolder}`
+}
+
+const elite = new Combo("Elite Combo ACDB-DCDB", "Havells", "Sibass", "Sibass")
+let result = elite.eliteCombo()
+console.log(result);
